@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+
+# Flask
+instance/
+.webassets-cache
+flask_session/
+
+# pytest / testing
+.pytest_cache/
+.tox/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+nosetests.xml
+test-results/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDEs / editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Model files (large binaries - optional to gitignore)
+# laptop_price_prediction_model.pkl
+
+# Data files (optional)
+# *.csv
+
+# Logs
+*.log
+logs/
+
+# Distribution / packaging
+*.manifest
+*.spec
+
+# PyInstaller
+dist/
+build/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json

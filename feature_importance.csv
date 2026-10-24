@@ -1,0 +1,258 @@
+feature,importance
+numeric__cpu_core_count,0.4160948490713651
+numeric__pixels_mp,0.11997379185692744
+numeric__display_height_px,0.08951506741646917
+numeric__ram_gb,0.057668457331945436
+numeric__ppi,0.043998890046990466
+numeric__gpu_vram_gb,0.041291946194677784
+numeric__storage_gb,0.036971509672484505
+categorical__gpu_type_Integrated,0.03351891014207317
+categorical__gpu_type_Dedicated,0.017449618666702044
+categorical__gpu_series_GeForce RTX,0.015832326858402804
+numeric__cpu_thread_count,0.013380301029300016
+categorical__gpu_brand_NVIDIA,0.01217614553636736
+numeric__cpu_p_cores,0.009899677208544927
+categorical__cpu_series_Core Ultra 7,0.009616721333586934
+numeric__has_dgpu,0.007901782675328732
+categorical__gpu_brand_Intel,0.007059819313847398
+numeric__display_size_inch,0.006312214072036675
+categorical__cpu_suffix_V,0.006063445380488932
+categorical__brand_acer,0.0034517657407561624
+categorical__cpu_series_Celeron,0.003254204009856058
+categorical__cpu_series_Core I7,0.003008696564693877
+categorical__cpu_series_Ryzen 5,0.002930127982949131
+categorical__cpu_family_Core,0.002205865252740292
+categorical__brand_microsoft,0.0020177401977046713
+categorical__device_category_Business,0.001975214747470003
+categorical__gpu_series_Integrated Graphics,0.0017779349076872731
+numeric__warranty_years,0.0016465074234062796
+categorical__brand_samsung,0.0015234705086053645
+categorical__device_category_Convertible,0.0014856742262974161
+categorical__cpu_suffix_U,0.0014080622203465013
+categorical__brand_dell,0.0013562843656448253
+categorical__cpu_series_Core I5,0.00131611724890509
+categorical__gpu_model_RTX 4050,0.0013065045706511483
+categorical__device_category_General,0.0012587130757882412
+categorical__cpu_model_1355U,0.0011541883622933303
+categorical__device_category_Thin & Light,0.0011351730010063638
+categorical__brand_motorola,0.0010596974889848579
+categorical__cpu_model_350,0.0010332946370415763
+categorical__brand_ultimus,0.001012166375364722
+categorical__cpu_suffix_H,0.0009655426723006478
+categorical__cpu_series_Core I3,0.0009146199245654772
+categorical__brand_thomson,0.000879871860273218
+categorical__gpu_model_RTX 3050,0.0008747623313873291
+categorical__os_name_Mac,0.0007920080897692907
+categorical__cpu_model_185H,0.000741718219088488
+categorical__brand_msi,0.0007066162371769178
+numeric__display_width_px,0.0006275984746618623
+categorical__cpu_model_5825U,0.0006126857846791206
+categorical__cpu_model_255H,0.0005789124849506487
+categorical__cpu_model_1235U,0.0005748442452822143
+categorical__cpu_model_1335U,0.0005650914057066347
+categorical__brand_infinix,0.0005622717286410062
+categorical__brand_hp,0.0005096884944014195
+categorical__gpu_model_UHD Graphics,0.0004778482223104689
+categorical__gpu_series_Apple GPU,0.0004562254653977
+categorical__cpu_brand_Apple,0.0004257610866353189
+categorical__brand_chuwi,0.0004169607138283987
+categorical__cpu_model_X1-26-100,0.0003750149769337915
+categorical__cpu_suffix_Missing,0.00034321480590674276
+categorical__cpu_series_Ryzen 3,0.00034021412469487533
+categorical__os_name_DOS,0.0003149282448502801
+categorical__cpu_model_1215U,0.0003139201966174477
+categorical__gpu_model_RTX 2050,0.00029270836545251523
+categorical__cpu_model_1334U,0.00028543487617476484
+categorical__cpu_model_X1 26 100,0.00027541888723147794
+categorical__cpu_series_M4,0.0002540860194439492
+categorical__brand_asus,0.00024074664455084313
+categorical__gpu_brand_Apple,0.00016527074332972492
+categorical__cpu_series_Core Ultra 5,0.0001641639477671392
+categorical__cpu_family_M-Series,0.0001627341480335701
+categorical__cpu_model_13500H,0.00016040788213028543
+categorical__cpu_model_7730U,0.0001542865738610491
+categorical__cpu_family_Core Ultra,0.00015219195920580407
+categorical__cpu_series_Ryzen 7,0.00014253189166304374
+categorical__brand_lenovo,0.00013933240479197247
+categorical__cpu_model_13650HX,0.00012786724924383164
+categorical__cpu_model_14700HX,0.00011872864737917297
+categorical__gpu_model_RTX 4080,0.00011152496199867148
+categorical__cpu_model_1115G4,0.00010554265576921562
+categorical__cpu_model_Elite,9.45859849497715e-05
+categorical__cpu_model_8540U,9.345800920508236e-05
+categorical__cpu_model_7430U,8.952657479518772e-05
+categorical__gpu_brand_AMD,7.620753821070724e-05
+categorical__cpu_model_12450H,7.608300905018121e-05
+categorical__cpu_model_125H,6.839584487229247e-05
+categorical__cpu_family_Snapdragon,6.539575429025712e-05
+categorical__brand_apple,6.188905008900959e-05
+categorical__gpu_series_Radeon,5.989274485312027e-05
+categorical__gpu_model_Integrated Graphics,5.610434829395141e-05
+categorical__brand_alienware,5.326601550942912e-05
+categorical__cpu_model_7445H,5.1398225469355756e-05
+numeric__cpu_lp_e_cores,4.9612417279697136e-05
+categorical__cpu_suffix_HS,4.770258614110204e-05
+categorical__gpu_model_Apple 32-Core GPU,4.673231882314081e-05
+categorical__gpu_model_RTX 5080,4.108518131428022e-05
+categorical__cpu_series_Core I9,4.0486503226068934e-05
+categorical__gpu_model_Iris Xe Graphics,3.941027083201527e-05
+categorical__cpu_model_1305U,3.9118601201444585e-05
+categorical__cpu_model_M4 Max,3.8000884967606997e-05
+categorical__cpu_model_7445HS,3.463442627034646e-05
+categorical__gpu_model_RTX A500,3.200199884665173e-05
+categorical__os_name_Chrome,2.9793111743569527e-05
+categorical__cpu_model_M4 Pro,2.837503715435274e-05
+categorical__cpu_model_155U,2.670306550034385e-05
+categorical__brand_gigabyte,2.667587906358646e-05
+categorical__cpu_model_228V,2.2972791968863153e-05
+categorical__cpu_model_125U,2.1077986079193985e-05
+categorical__gpu_model_RTX 5070,2.0268317097053696e-05
+categorical__gpu_series_Iris Xe,1.674595051048171e-05
+categorical__cpu_suffix_Pro,1.2594215826054955e-05
+categorical__cpu_model_14450HX,1.1104876119609215e-05
+categorical__gpu_model_HD Graphics,1.0880363137631995e-05
+categorical__cpu_family_Ryzen,1.0674827732414428e-05
+categorical__cpu_model_12700H,1.0052734885839358e-05
+categorical__cpu_brand_Intel,7.15324111682578e-06
+categorical__cpu_brand_AMD,6.033157803288283e-06
+categorical__gpu_model_Apple 20-Core GPU,4.493568664179481e-06
+numeric__cpu_e_cores,4.2250519827092885e-06
+categorical__cpu_suffix_Max,4.130798426718048e-06
+categorical__device_category_Gaming,4.044483370687867e-06
+categorical__gpu_model_RTX 5090,8.378895074705841e-07
+categorical__cpu_series_Core 7,0.0
+categorical__cpu_series_Core 5,0.0
+categorical__cpu_series_Core 3,0.0
+categorical__gpu_model_RTX 5070 Ti,0.0
+categorical__os_name_Linux,0.0
+categorical__gpu_type_Missing,0.0
+categorical__os_name_Ubuntu,0.0
+categorical__gpu_model_RTX A1000,0.0
+categorical__cpu_model_255HX,0.0
+categorical__cpu_model_250,0.0
+categorical__cpu_model_240H,0.0
+categorical__cpu_model_226V,0.0
+categorical__cpu_model_210H,0.0
+categorical__cpu_model_225H,0.0
+categorical__cpu_model_155H,0.0
+categorical__cpu_model_150U,0.0
+categorical__cpu_model_14650HX,0.0
+categorical__cpu_model_14900HX,0.0
+categorical__cpu_model_12650HX,0.0
+categorical__cpu_model_13620H,0.0
+categorical__cpu_model_13700H,0.0
+categorical__cpu_model_13700HX,0.0
+categorical__cpu_model_13850HX,0.0
+categorical__cpu_model_13900H,0.0
+categorical__cpu_model_1315U,0.0
+categorical__cpu_model_13450HX,0.0
+categorical__cpu_model_13420H,0.0
+categorical__cpu_series_Ryzen Ai 7,0.0
+categorical__cpu_series_Ryzen Ai 5,0.0
+categorical__cpu_series_Ryzen 9,0.0
+categorical__cpu_model_1135G7,0.0
+categorical__cpu_model_100U,0.0
+categorical__cpu_model_120U,0.0
+categorical__cpu_model_1195G7,0.0
+categorical__cpu_model_11950H,0.0
+categorical__cpu_model_115U,0.0
+categorical__cpu_model_12500H,0.0
+categorical__cpu_model_12450HX,0.0
+categorical__cpu_model_1255U,0.0
+categorical__cpu_model_12650H,0.0
+categorical__cpu_series_Core Ultra 9,0.0
+categorical__cpu_series_M5,0.0
+categorical__cpu_series_M3,0.0
+categorical__cpu_series_Snapdragon X,0.0
+categorical__cpu_series_Ryzen Ai Max,0.0
+categorical__cpu_series_Ryzen Ai 9,0.0
+categorical__gpu_model_RX 6500M,0.0
+categorical__gpu_model_Radeon,0.0
+categorical__brand_walker,0.0
+categorical__cpu_family_Core 5,0.0
+categorical__cpu_brand_Snapdragon,0.0
+categorical__cpu_family_Celeron,0.0
+categorical__cpu_series_210H,0.0
+categorical__cpu_model_285H,0.0
+categorical__cpu_model_258V,0.0
+categorical__cpu_model_330,0.0
+categorical__cpu_model_5600H,0.0
+categorical__cpu_model_5500U,0.0
+categorical__cpu_model_390,0.0
+categorical__cpu_model_370,0.0
+categorical__cpu_model_365,0.0
+categorical__cpu_model_5600U,0.0
+categorical__cpu_model_5625U,0.0
+categorical__cpu_model_5700U,0.0
+categorical__cpu_model_7330U,0.0
+categorical__cpu_model_7320U,0.0
+categorical__cpu_model_340,0.0
+categorical__cpu_model_256V,0.0
+categorical__cpu_model_266V,0.0
+categorical__cpu_model_270,0.0
+categorical__cpu_model_275HX,0.0
+categorical__cpu_model_255U,0.0
+categorical__cpu_suffix_C,0.0
+categorical__cpu_model_Plus X1P-64-100,0.0
+categorical__cpu_model_Plus X1E-80-100,0.0
+categorical__cpu_model_Plus X1P-42-100,0.0
+categorical__cpu_model_Plus,0.0
+categorical__cpu_model_N4500,0.0
+categorical__cpu_model_N4020,0.0
+categorical__cpu_model_N4020C,0.0
+categorical__cpu_model_HX370,0.0
+categorical__cpu_model_M3,0.0
+categorical__cpu_model_M5,0.0
+categorical__cpu_model_M4,0.0
+categorical__cpu_model_8945HS,0.0
+categorical__cpu_model_9955HX,0.0
+categorical__cpu_model_Elite X1E 78 100,0.0
+categorical__cpu_model_Elite X1E-78-100,0.0
+categorical__cpu_model_8265U,0.0
+categorical__cpu_model_8840H,0.0
+categorical__cpu_model_8645HS,0.0
+categorical__cpu_model_8640U,0.0
+categorical__cpu_model_8940HX,0.0
+categorical__cpu_model_8945H,0.0
+categorical__cpu_model_8840U,0.0
+categorical__cpu_model_8840HX,0.0
+categorical__cpu_model_7735HS,0.0
+categorical__cpu_model_7945HX,0.0
+categorical__cpu_model_7235HS,0.0
+categorical__cpu_model_6600H,0.0
+categorical__cpu_model_7435HS,0.0
+categorical__cpu_model_7520U,0.0
+categorical__cpu_model_7530U,0.0
+categorical__cpu_model_7535HS,0.0
+categorical__cpu_model_260,0.0
+categorical__gpu_series_HD,0.0
+categorical__gpu_series_Missing,0.0
+categorical__gpu_series_Arc,0.0
+categorical__gpu_brand_Qualcomm,0.0
+categorical__gpu_series_Adreno,0.0
+categorical__gpu_brand_Missing,0.0
+categorical__brand_colorful,0.0
+categorical__cpu_suffix_G7,0.0
+categorical__cpu_suffix_HX,0.0
+categorical__gpu_series_GeForce MX,0.0
+categorical__gpu_model_Apple 10-Core GPU,0.0
+categorical__gpu_model_Arc Graphics,0.0
+categorical__gpu_model_Apple 16-Core GPU,0.0
+categorical__gpu_model_Adreno GPU,0.0
+categorical__gpu_series_UHD,0.0
+categorical__gpu_model_RTX 2000 Ada,0.0
+categorical__gpu_model_RTX 1000,0.0
+categorical__gpu_model_Missing,0.0
+categorical__gpu_model_MX 230,0.0
+categorical__gpu_model_RTX 3050A,0.0
+categorical__gpu_model_RTX 3070,0.0
+categorical__gpu_model_RTX 3000 Ada Generation,0.0
+categorical__gpu_model_RTX 3000,0.0
+categorical__gpu_model_RTX 4070,0.0
+categorical__gpu_model_RTX 4060,0.0
+categorical__gpu_model_RTX 500,0.0
+categorical__gpu_model_RTX 4090,0.0
+categorical__gpu_model_RTX 500 Ada,0.0
+categorical__gpu_model_RTX 5050,0.0
+categorical__gpu_model_RTX 5060,0.0
+categorical__os_name_Windows,0.0

@@ -1,0 +1,15 @@
+{
+  "model": "Tuned Gradient Boosting",
+  "r2": 0.9280977700736183,
+  "mae": 11074.654546928055,
+  "rmse": 22914.01275730487,
+  "training_rows": 793,
+  "testing_rows": 199,
+  "feature_count": 27,
+  "best_parameters": {
+    "regressor__model__learning_rate": 0.1,
+    "regressor__model__max_depth": 3,
+    "regressor__model__min_samples_leaf": 2,
+    "regressor__model__n_estimators": 200
+  }
+}
