@@ -1,4 +1,6 @@
-# Laptop Price Prediction
+# LapPrice AI — Laptop Price Prediction
+
+🌐 **Live Website:** [Open LapPrice AI](https://lapprice-ml.onrender.com) · 💻 **Source Code:** [GitHub Repository](https://github.com/Hemanth-Kumar001/lapprice-ml)
 
 An AI-powered web application for predicting laptop prices in the Indian market using a Tuned Gradient Boosting model with **92.8% R² accuracy**.
 
