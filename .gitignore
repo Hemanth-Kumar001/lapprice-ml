@@ -77,3 +77,10 @@ build/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+
+# Legacy assets
+html5up-helios/
+app/static/assets/
+app/static/css/
+app/static/images/
+app/static/js/

@@ -1,21 +1,47 @@
-import warnings
-warnings.filterwarnings('ignore', category=UserWarning)
+import sys
 import os
 import math
+import warnings
+warnings.filterwarnings('ignore', category=UserWarning)
+
 import joblib
 import pandas as pd
 import numpy as np
 
-# Compatibility shim for older NumPy versions loading a model serialized with
-# a newer NumPy version, where the pickle passes the MT19937 class itself.
+# 1. Compatibility mapping if running on NumPy 1.x loading a NumPy 2.x serialized model
+if not hasattr(np, '_core'):
+    import numpy.core as _np_core
+    sys.modules['numpy._core'] = _np_core
+    sys.modules['numpy._core.numeric'] = getattr(_np_core, 'numeric', None)
+    sys.modules['numpy._core.multiarray'] = getattr(_np_core, 'multiarray', None)
+    sys.modules['numpy._core.umath'] = getattr(_np_core, 'umath', None)
+
+# 2. Compatibility shim for BitGenerator deserialization
 try:
     import numpy.random._pickle as _np_random_pickle
     _original_bit_generator_ctor = _np_random_pickle.__bit_generator_ctor
+
     def _compatible_bit_generator_ctor(bit_generator_name='MT19937'):
         if isinstance(bit_generator_name, type) and issubclass(bit_generator_name, np.random.BitGenerator):
             return bit_generator_name()
+        if isinstance(bit_generator_name, str) and hasattr(np.random, bit_generator_name):
+            try:
+                return _original_bit_generator_ctor(bit_generator_name)
+            except Exception:
+                return getattr(np.random, bit_generator_name)()
         return _original_bit_generator_ctor(bit_generator_name)
+
     _np_random_pickle.__bit_generator_ctor = _compatible_bit_generator_ctor
+except (ImportError, AttributeError):
+    pass
+
+# 3. Compatibility shim for scikit-learn remainder columns
+try:
+    import sklearn.compose._column_transformer as _sct
+    if not hasattr(_sct, '_RemainderColsList'):
+        class _RemainderColsList(list):
+            pass
+        _sct._RemainderColsList = _RemainderColsList
 except (ImportError, AttributeError):
     pass
 
