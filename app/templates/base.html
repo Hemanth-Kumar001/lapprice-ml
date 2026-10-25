@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1020"><title>{% block title %}LapPrice AI{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="nav-wrap"><nav class="nav container"><a class="brand" href="{{ url_for('main.home') }}"><span class="brand-mark">L</span> LAPPRICE<span class="brand-ai">AI</span></a><div class="nav-links"><a href="{{ url_for('main.home') }}">Home</a><a href="{{ url_for('main.predict') }}">Price Predictor</a><a href="{{ url_for('main.dashboard') }}">Model Insights</a><a href="{{ url_for('main.about') }}">About</a></div><a class="nav-cta" href="{{ url_for('main.predict') }}">Try predictor ↗</a></nav></header>
+<main>{% block content %}{% endblock %}</main>
+<footer class="footer"><div class="container footer-inner"><span>© LapPrice AI · Student machine-learning project</span><span>Built with Python · Flask · scikit-learn</span></div><p class="container disclaimer">Estimates are model predictions, not official retail quotes or financial advice.</p></footer>
+</body></html>
