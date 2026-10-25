@@ -4,12 +4,18 @@ import os
 import math
 import joblib
 import pandas as pd
-# Compatibility shim: legacy serialized models may reference numpy.random._mt19937.MT19937.
-# Register the internal bit-generator class at the legacy lookup path before unpickling.
+import numpy as np
+
+# Compatibility shim for older NumPy versions loading a model serialized with
+# a newer NumPy version, where the pickle passes the MT19937 class itself.
 try:
-    from numpy.random import _mt19937
-    if not hasattr(np.random, 'MT19937'):
-        np.random.MT19937 = _mt19937.MT19937
+    import numpy.random._pickle as _np_random_pickle
+    _original_bit_generator_ctor = _np_random_pickle.__bit_generator_ctor
+    def _compatible_bit_generator_ctor(bit_generator_name='MT19937'):
+        if isinstance(bit_generator_name, type) and issubclass(bit_generator_name, np.random.BitGenerator):
+            return bit_generator_name()
+        return _original_bit_generator_ctor(bit_generator_name)
+    _np_random_pickle.__bit_generator_ctor = _compatible_bit_generator_ctor
 except (ImportError, AttributeError):
     pass
 
