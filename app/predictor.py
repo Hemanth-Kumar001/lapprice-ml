@@ -4,6 +4,14 @@ import os
 import math
 import joblib
 import pandas as pd
+# Compatibility shim: legacy sklearn/joblib models may reference numpy.random._mt19937.MT19937.
+# NumPy 1.26 exposes the underlying class from numpy.random._mt19937.
+try:
+    from numpy.random import _mt19937
+    if not hasattr(np.random, 'MT19937'):
+        np.random.MT19937 = _mt19937.MT19937
+except (ImportError, AttributeError):
+    pass
 import numpy as np
 
 _model = None
